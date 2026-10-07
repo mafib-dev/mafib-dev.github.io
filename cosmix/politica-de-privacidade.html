@@ -23,13 +23,14 @@
 
 <main class="documento">
 <h1>Política de Privacidade — Cosmix: Fusão Espacial</h1>
-    <p class="atualizado">Última atualização: 5 de outubro de 2026</p>
+    <p class="atualizado">Última atualização: 7 de outubro de 2026</p>
 
     <p class="resumo">
       <strong>Em resumo:</strong> o Cosmix não tem servidor próprio e não pede seu nome, e-mail ou telefone.
       Seu progresso fica no seu celular e, se você entrar no Google Play Games, numa cópia na sua conta Google.
       As compras são processadas pela Google Play, e os anúncios são exibidos pelo Google AdMob, que usa
-      dados do aparelho para isso. Você pode pedir informações ou a exclusão dos seus dados pelo e-mail
+      dados do aparelho para isso. O jogo também envia ao Google Firebase estatísticas de uso das partidas e
+      relatórios de falhas, sem o ID de publicidade, para melhorar o equilíbrio do jogo e corrigir erros. Você pode pedir informações ou a exclusão dos seus dados pelo e-mail
       <a href="mailto:mafib.dev@gmail.com">mafib.dev@gmail.com</a>.
     </p>
 
@@ -52,7 +53,7 @@
       <li>o registro das compras já entregues, para uma compra não ser creditada duas vezes.</li>
     </ul>
     <p>
-      Esses dados não são enviados a nenhum servidor do desenvolvedor. Eles são apagados quando você
+      Esses dados ficam no aparelho (as estatísticas da seção 6 são um resumo à parte). Eles são apagados quando você
       desinstala o app ou limpa os dados dele nas configurações do Android.
     </p>
 
@@ -106,7 +107,27 @@
       <li>Não exibimos anúncios direcionados a crianças, e o conteúdo dos anúncios é limitado à classificação indicada para adolescentes.</li>
     </ul>
 
-    <h2>6. O que o jogo não faz</h2>
+    <h2>6. Estatísticas de uso e falhas (Google Firebase)</h2>
+    <p>
+      Para equilibrar o jogo (por exemplo, saber se a poeira estelar está faltando) e corrigir erros, o app usa o
+      <strong>Google Analytics para Firebase</strong> e o <strong>Firebase Crashlytics</strong>. Eles recebem:
+    </p>
+    <ul>
+      <li><strong>eventos do jogo:</strong> o resumo de cada partida (duração, pontos, poeira ganha e gasta, poderes comprados, missões cumpridas, patente), as compras de poderes, cores, pacotes e personagens, e os toques no botão de ganhar poeira;</li>
+      <li>um <strong>identificador do app nesta instalação</strong>, gerado pelo Firebase, que muda se você reinstalar o app ou limpar os dados dele;</li>
+      <li>informações do aparelho e do sistema (modelo, versão do Android, idioma), o país aproximado e dados de uso do app (como a duração das sessões);</li>
+      <li>em caso de falha, o <strong>relatório da falha</strong> (o ponto do código em que o app fechou e o estado do aparelho naquele momento).</li>
+    </ul>
+    <ul>
+      <li><strong>Sem ID de publicidade:</strong> o jogo desliga a coleta do ID de publicidade no Firebase, e esses dados não são usados para anúncios nem para personalizar anúncios.</li>
+      <li><strong>Não identificam você:</strong> o jogo não envia nome, e-mail nem o seu perfil do Play Games ao Firebase.</li>
+      <li><strong>Finalidade:</strong> medir o equilíbrio do jogo, entender como ele é jogado e corrigir falhas.</li>
+      <li><strong>Base legal:</strong> o interesse legítimo de manter o jogo funcionando e equilibrado (art. 7º, IX, da LGPD).</li>
+      <li><strong>Por quanto tempo:</strong> os eventos ficam guardados por até 14 meses; os relatórios de falha, por até 90 dias.</li>
+      <li>O Google trata esses dados como operador, conforme os <a href="https://firebase.google.com/support/privacy?hl=pt-br" target="_blank" rel="noopener">termos de privacidade do Firebase</a>.</li>
+    </ul>
+
+    <h2>7. O que o jogo não faz</h2>
     <ul>
       <li>Não pede nome, e-mail, telefone ou documentos.</li>
       <li>Não usa sua localização precisa, câmera, microfone, contatos ou arquivos.</li>
@@ -114,22 +135,23 @@
       <li>Não vende seus dados.</li>
     </ul>
 
-    <h2>7. Com quem os dados são compartilhados</h2>
+    <h2>8. Com quem os dados são compartilhados</h2>
     <p>
-      Só com o Google, nos serviços descritos acima (Google Play Games, Google Play Billing e Google AdMob).
+      Só com o Google, nos serviços descritos acima (Google Play Games, Google Play Billing, Google AdMob e Google Firebase).
       Os servidores do Google ficam também fora do Brasil, então pode haver <strong>transferência internacional</strong>
       de dados, feita pelo Google com as garantias previstas no art. 33 da LGPD. Os dados também podem ser
       informados a autoridades quando a lei exigir.
     </p>
 
-    <h2>8. Por quanto tempo</h2>
+    <h2>9. Por quanto tempo</h2>
     <ul>
       <li><strong>No aparelho:</strong> até você desinstalar o app ou limpar os dados dele.</li>
       <li><strong>Na nuvem (Jogos salvos):</strong> até você apagar pelo Google Play Games ou pedir a exclusão.</li>
+      <li><strong>Estatísticas e falhas (Firebase):</strong> até 14 meses para os eventos e até 90 dias para os relatórios de falha.</li>
       <li><strong>Dados de anúncios e de compras:</strong> pelo prazo definido pelo Google em suas políticas.</li>
     </ul>
 
-    <h2>9. Idade mínima</h2>
+    <h2>10. Idade mínima</h2>
     <p>
       O Cosmix é indicado para pessoas com <strong>13 anos ou mais</strong> e não é direcionado a crianças.
       Para adolescentes, o tratamento de dados segue o melhor interesse do titular (art. 14 da LGPD).
@@ -137,7 +159,7 @@
       para <a href="mailto:mafib.dev@gmail.com">mafib.dev@gmail.com</a> para pedirmos a exclusão.
     </p>
 
-    <h2>10. Seus direitos</h2>
+    <h2>11. Seus direitos</h2>
     <p>Pela LGPD (art. 18), você pode pedir, sem custo:</p>
     <ul>
       <li>a confirmação de que tratamos seus dados e o acesso a eles;</li>
@@ -154,21 +176,21 @@
       <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">Autoridade Nacional de Proteção de Dados (ANPD)</a>.
     </p>
 
-    <h2>11. Segurança</h2>
+    <h2>12. Segurança</h2>
     <p>
       Os dados do aparelho ficam na área privada do app, que outros apps não acessam. A comunicação com os
       serviços do Google é criptografada. Nenhum sistema é totalmente seguro, mas adotamos as medidas
       razoáveis ao nosso alcance.
     </p>
 
-    <h2>12. Mudanças nesta política</h2>
+    <h2>13. Mudanças nesta política</h2>
     <p>
       Esta política pode mudar, por exemplo, se o jogo ganhar novos recursos. A versão atual fica sempre nesta
       página, com a data da última atualização. Mudanças importantes também serão avisadas na descrição do
       jogo na Google Play.
     </p>
 
-    <h2>13. Contato</h2>
+    <h2>14. Contato</h2>
     <p>
       Matheus Figueredo (Mafib) · <a href="mailto:mafib.dev@gmail.com">mafib.dev@gmail.com</a>
     </p>
